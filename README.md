@@ -42,7 +42,21 @@
 <p>This site will be responsive with device.In that case use meadia quiry or bootstrap.</p>
 
 <h2> Optional Section <h2>
-<p> Loading..... </p>
+<h4> Add Form For Contact Us <h4>
+<p>This section create to user contact us.This section contain:</p>
+<ul>
+<li> One div which class details why user contact us</li>
+<li> One input box for user enter his email. </li>
+<li> One textarea for message </li>
+<li> One button for send message </li>
+</ul>
+
+<h4> Add Footer </h4>
+<p>This section is website footer. This section contain</p>
+<ul>
+<li> One h1 tag </li>
+<li> 4 Icon for user contact in socail network </li>
+</ul>
 
 
 <h2>Using Technology</h2>
@@ -50,4 +64,6 @@
 <li> Html </li>
 <li> Css </li>
 <li> Bootstrap </li>
+<li> Font Awesome </li>
+</ul>
 
