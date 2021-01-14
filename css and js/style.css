@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* Start Design Navbar */
+
+.navbar-light{
+    background: transparent;
+}
+
+.navbar-light .navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #363958;
+}
+
+.navbar-light .navbar-brand span{
+    color: #FA804C;
+}
+
+#navbar-nav{
+    margin-left: auto;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: #3C3C3C;
+    margin: 0px 20px;
+    transition: all 0.3s linear;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FA804C;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    background: none;
+}
+
+/* End Design Nabvar */
+
+/* Start Design Welcome Section */
+header{
+    background-color: #FFF9F4;   
+}
+
+.welcome-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+header .container .row{
+    justify-content: space-evenly;
+}
+
+header .container .row .col{
+    min-width: 270px;
+    max-width: 400px;
+}
+
+.welcome-text h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #363958;
+}
+
+.welcome-text .high-light{
+    color: #FA804C;
+}
+
+.welcome-text p{
+    color: #3E3E3E;
+}
+
+.btn{
+    width: 130px;
+    background: linear-gradient(#3D4FF3,#3543BC);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn img{
+    width: 24px;
+    padding-right: 5px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+/* Start Design Casual Section */
+h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1;
+    font-size: 45px;
+    color: #363958;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    min-width: 300px;
+    width: 28%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 40px #cac6c6;
+}
+
+.card img{
+    width: 100%;
+    margin: 3px auto;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #363958;
+    margin-top: 15px;
+}
+
+.card p{
+    color: #3E3E3E;
+}
+.card div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.card span{
+    font-size: 25px;
+    font-weight: bold;
+    color:#FA804C;
+}
+.card .btn img{
+    background-color: transparent;
+    width: 24px;
+    padding-right: 5px;
+}
+/* End Design Casual Section */
+
+/* Start Design Feature Section */
+.feature-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(223, 220, 220);
+}
+
+.feature-card .feature-image{
+    width: 78px;
+}
+
+.feature-card .feature-details h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #363958;
+}
+.feature-card .feature-details p{
+    font-size: 16px;
+    color: #3E3E3E;
+}
+
+.for-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Design Feature Section */
+
+
+/* Start Media Queriy */
+
+
+@media only screen and (max-width: 545px){
+    /* Design Welcome Section */
+    header .container .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    header .container .row .col{
+        min-width: auto;
+        width: 100%;
+    }
+
+    .welcome-text{
+        order: -1;
+    }
+
+    /* End Design Welcome Section */
+
+    /* Start Design Card Section */
+
+    .product-section h1{
+        text-align: center;
+    }
+
+    .card-container{
+        justify-content: center;
+    }    
+    .card{
+        min-width: 345px;
+    }
+    /* End Design Card Section */
+}
+
+@media only screen and (max-width: 770px){
+    /* Start Design Card Section */
+    .card-container{
+        justify-content: center;
+    }
+    .card{
+        width: 90%;
+    }
+    /* End Design Card Section */
+
+    /* Start Design Feature Section */
+    .feature .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .for-img{
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .feature-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card .feature-image{
+        margin: 40px 0px;
+    }
+
+    .feature-details{
+        text-align: center;
+    }
+    
+    /* End Design Feature Section */
+}
